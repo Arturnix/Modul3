@@ -3,6 +3,7 @@ import java.util.ArrayList;
 public class ToDoList {
 
     ArrayList<String> toDoList = new ArrayList<>();
+    
     public ToDoList() {
         ArrayList<String> toDoList = new ArrayList<>();
     }
@@ -16,8 +17,6 @@ public class ToDoList {
             for(String i : toDoList) {
                 System.out.println(toDoList.indexOf(i) + ": " + i);
             }
-
-
     }
 
     public void remove(int number) {
