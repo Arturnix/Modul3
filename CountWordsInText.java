@@ -30,9 +30,13 @@ public class CountWordsInText {
             count = 0;
         }
 
-        Set<Map.Entry<String, Integer>> entries = wordToCount.entrySet();
+       /* Set<Map.Entry<String, Integer>> entries = wordToCount.entrySet();
         for (Map.Entry<String, Integer> entry : entries) {
             System.out.println(entry.getKey() + " : " + entry.getValue());
+        }*/
+
+        for (String key : wordToCount.keySet()) {
+            System.out.println(key + " : " + wordToCount.get(key));
         }
 
         return wordToCount;
