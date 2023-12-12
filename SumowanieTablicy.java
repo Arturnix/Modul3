@@ -7,23 +7,14 @@ public class SumowanieTablicy {
     }
 
 
-    public static int sumArray(int[] numbers) {
-        boolean isNegative = false;
-        int sum = 0;
+    public static double sumArray(int[] numbers) {
 
-
+        double sum = 0;
+        
             for (int i = 0; i < numbers.length; i++) {
                 sum += numbers[i];
-                if(numbers[i] < 0) {
-                    isNegative = true;
-                }
             }
 
-            if((sum < 0) && isNegative == false) {
-                System.out.println("Suma podanych liczb przekracza zakres typu danych.\n" +
-                        "Podaj mniejsze wartości.");
-                return 0;
-            }
             return sum;
     }
 }
